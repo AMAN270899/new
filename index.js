@@ -1,4 +1,4 @@
-let form = document.getElementById("form");
+let form = document.getElementById("add");
 let textInput = document.getElementById("textInput");
 let dateInput = document.getElementById("dateInput");
 let msg = document.getElementById("msg");
@@ -7,9 +7,9 @@ let add = document.getElementById("add");
 let tasks = document.getElementById("tasks");
 
 let data= [];
-
-form.addEventListener("submit", (e)=> {
-    e.preventDefault();
+console.log(form)
+form.addEventListener("click", (e)=> {
+    console.log("first")
     formValidation();
 });
 
